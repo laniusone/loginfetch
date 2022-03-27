@@ -8,3 +8,7 @@ Therefore, it is licensed with GPLv3, as repo mentioned above.
 # how-to
 
 In progress...
+
+# to-do
+
+* Move configurable values to separate file
