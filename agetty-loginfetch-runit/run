@@ -1,0 +1,7 @@
+#!/bin/sh
+service=$(basename $(pwd))
+tty=$(echo $service | sed 's/agetty-//g')
+
+/usr/local/bin/loginfetch 2>/dev/null 1>/dev/null
+
+exec setsid /sbin/agetty -8 38400 $tty linux

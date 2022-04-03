@@ -1,0 +1,4 @@
+#!/bin/sh
+service=$(basename $(pwd))
+tty=$(echo $service | sed 's/agetty-//g')
+exec utmpset -w $tty

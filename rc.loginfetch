@@ -1,0 +1,9 @@
+#!/bin/sh
+
+script=/usr/local/bin/loginfetch
+
+start() {
+    $script
+}
+
+[ "$1" = "start" ] && start || echo "usage $0 start (as root)" && exit 1

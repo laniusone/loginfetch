@@ -12,3 +12,5 @@ install:
 	chmod +x ${DESTDIR}/usr/local/bin/loginfetch
 	mkdir -p ${DESTDIR}${DOCDIR} 2> /dev/null
 	cp README.md ${DESTDIR}${DOCDIR}/
+	cp -r agetty-loginfetch-runit ${DESTDIR}/etc/sv/
+	cp -r rc.loginfetch ${DESTDIR}/etc/rc.d/
