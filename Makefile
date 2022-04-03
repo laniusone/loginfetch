@@ -13,4 +13,6 @@ install:
 	mkdir -p ${DESTDIR}${DOCDIR} 2> /dev/null
 	cp README.md ${DESTDIR}${DOCDIR}/
 	cp -r agetty-loginfetch-runit ${DESTDIR}/etc/sv/
+	mkdir -p ${DESTDIR}/etc/rc.d/ 2> /dev/null
 	cp -r rc.loginfetch ${DESTDIR}/etc/rc.d/
+	@echo Installation complete.
